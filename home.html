@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CrossFit Clã - Open 2026</title>
+  
+  <link rel="icon" href="logo1.jpg" type="image/png">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="splash-screen">
+    <div class="splash-content">
+      <img src="logo1.jpg" alt="Logo Clã" class="splash-logo">
+      <h2 class="splash-text">OPEN<span style="color: var(--btn-primary);">2026</span></h2>
+    </div>
+  </div>
+
+  <div class="container">
+    
+    <header style="text-align: center; margin-bottom: 20px;">
+      <img src="open3.png" alt="CrossFit Clã - Open Series 2026" class="hero-logo">
+    </header>
+
+    <nav class="menu-grid">
+      
+      <a href="ranking.html" class="menu-card card-highlight">
+        <div>🥇</div>
+        <h2>Leaderboard</h2>
+        <p>Ver Classificação</p>
+      </a>
+
+     <a href="resultados.html" class="menu-card">
+        <div>⏱️</div>
+        <h2>Lançar Resultados</h2>
+        <p>Área do Atleta</p>
+      </a>
+
+    </nav>
+
+    <footer style="text-align:center; margin-top:40px; font-size:0.8rem; color:#94a3b8; opacity:0.6; padding-bottom: 20px;">
+      <p>&copy; 2026 Bruno Lopes Ribeiro Silva</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        UI.init(); // Inicia funcionalidades
+        
+        // Remove Splash Screen após 2.5s
+        const splash = document.getElementById("splash-screen");
+        if(splash) {
+            setTimeout(() => {
+                splash.classList.add("hidden");
+            }, 2500);
+        }
+    });
+  </script>
+</body>
+</html>
